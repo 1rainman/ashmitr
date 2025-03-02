@@ -7,6 +7,66 @@ html {
     padding: 0;
     box-sizing: border-box;
 }
+@media (max-width: 600px) {
+    /* Example: Stack your layout vertically */
+.home-container {
+      flex-direction: column;
+      align-items: center;
+      padding: 20px;
+}
+  
+    /* Example: Center your text */
+.intro-text {
+      margin-left: 0;
+      max-width: 100%;
+      text-align: center;
+}
+  
+    /* Example: Make the image smaller */
+.intro-image img {
+      width: 200px;
+      height: 200px;
+      margin: 20px 0;
+}
+}
+  
+  /* ============ iPad Portrait ============ */
+  /* 768px is the width of an iPad in portrait orientation */
+@media (max-width: 768px) {
+    .home-container {
+      flex-direction: column;
+      align-items: center;
+      padding: 30px;
+    }
+  
+    .intro-text {
+      margin-left: 0;
+      max-width: 90%; /* let it expand a bit, but not too wide */
+      text-align: center;
+    }
+  
+    .intro-image img {
+      width: 300px;
+      height: 300px;
+      margin: 20px 0;
+    }
+}
+  
+  /* ============ iPad Landscape (and Larger Tablets) ============ */
+  /* 1024px is a common width for iPads in landscape orientation */
+@media (max-width: 1024px) {
+    .home-container {
+      /* Maybe you still want a two-column layout here, 
+         just slightly smaller spacing than desktop */
+      padding: 40px;
+    }
+  
+    /* Tweak your image or text as needed */
+    .intro-image img {
+      width: 350px;
+      height: 350px;
+    }
+}
 
 body {
     background-image: url(bg3.jpg);
